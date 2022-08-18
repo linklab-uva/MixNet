@@ -1,0 +1,11 @@
+numpy
+scipy
+pyyaml
+shapely
+matplotlib
+gitpython
+pkbar
+tensorboard
+optuna
+scikit-learn
+scikit-image
