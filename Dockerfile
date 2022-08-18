@@ -14,6 +14,7 @@ COPY requirements.txt ./requirements.txt
 # Install python packages
 RUN apt-get update && pip3 install --upgrade pip \
     && pip3 install --no-cache-dir -r ./requirements.txt --ignore-installed PyYAML \
+    && pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 \
     && rm -rf ~/.cache/pip/*
 
 # Copy repo into the container
